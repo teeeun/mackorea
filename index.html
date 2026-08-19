@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACKOREA</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header id="navbar">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+
+            <ul class="menu_wrap">
+                <li>
+                    <a href="#">공식몰 단독 혜택</a>
+                </li>
+                <li>
+                    <a href="#">신제품</a>
+                </li>
+                <li>
+                    <a href="#">베스트셀러</a>
+                </li>
+                <li>
+                    <a href="#">립</a> 
+                </li>
+                <li>
+                    <a href="#">페이스</a>
+                </li>
+                <li>
+                    <a href="#">아이</a>
+                </li>
+                <li>
+                    <a href="#">브러시</a>
+                </li>
+                <li>
+                    <a href="#">스킨케어</a>
+                </li>
+                <li>
+                    <a href="#">아티스트리</a>
+                </li>
+                <li>
+                    <a href="#">메이크업서비스</a>
+                </li>
+            </ul>
+
+            <div class="side_menu"> 
+                <div class="btn search"><a href="#"><img src="img/search.png" alt="검색"></a></div>
+                <div class="btn login"><a href="#"><img src="img/login.png" alt="로그인"></a></div>
+                <div class="btn cart"><a href="#"><img src="img/cart.png" alt="장바구니"></a></div>
+                <div class="btn menu"><a href="#"><img src="img/menu_mo.png" alt="메뉴"></a></div>
+            </div>
+            <script>
+                window.addEventListener("scroll", function () {
+                  const navbar = document.getElementById("navbar");
+                 
+                  
+                  if (window.scrollY > 50) {
+                    navbar.classList.add("scrolled");
+                    
+                  } else {
+                    navbar.classList.remove("scrolled");
+                  
+                   
+                  }
+                });
+              </script>
+        </header>
+        
+       
+          
+        <!-- section1 -->
+        <section class="section1">
+            <div class="swiper mySwiper section1_swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/section1_bg.png" alt="" class="pc_bg">
+                    <img src="img/section1_mobg.png" alt="" class="mo_bg">
+                    <div class="text_wrap">
+                        <p>NEW 글로우 플레이 <br class="mo_br">라이트풀 C3 톤-업 프라이머</p>
+                        <h2># 5년 연속 No.1* 베이스</h2>
+                        <h2># 맑고 촉촉한 피부</h2>
+        
+                        <div class="icon_wrap">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/section1_bg2.png" alt="" class="pc_bg">
+                    <img src="img/section1_mobg2.png" alt="" class="mo_bg">
+                    <div class="text_wrap">
+                        <p>NEW 립글라스 <br class="mo_br">에어 논-스틱 글로스</p>
+                        <h2># 맑고 투명한 크리스탈 광택</h2>
+                        <h2># 오랜 시간 지속되는 촉촉함</h2>
+        
+                        <div class="icon_wrap">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/section1_bg7.png" alt="" class="pc_bg">
+                    <img src="img/section1_mobg3.png" alt="" class="mo_bg">
+                    <div class="text_wrap">
+                        <p>NEW 스튜디오 픽스 <br class="mo_br">파우더 플러스 파운데이션</p>
+                        <h2># 5년 연속 No.1* 컴팩트 파운데이션</h2>
+                        <h2># 하루종일 보송하게 FLX</h2>
+        
+                        <div class="icon_wrap">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                  </div>
+                 
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+              </div>
+
+              <script>
+                const progressCircle = document.querySelector(".autoplay-progress svg");
+                const progressContent = document.querySelector(".autoplay-progress span");
+                var swiper = new Swiper(".section1_swiper", {
+                  spaceBetween: 0,
+                  centeredSlides: true,
+                  autoplay: {
+                    delay: 7000,
+                    disableOnInteraction: false
+                  },
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true
+                  },
+                  navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                  },
+                });
+              </script>
+        </section>
+
+        <!-- section2 -->
+         <section class="section2">
+            <!-- section2 pc -->
+            <div class="box_pc">
+                <h2>NEW ARRIVERS</h2>
+                <div class="wrap">
+                    <div class="con1">
+                        <a href="#">
+                            <img src="img/section2_con1.png" alt=""> 
+                        </a>
+                    </div>
+                    
+                    <div class="con2_wrap">
+                        <div class="con2">
+                            <a href="#">
+                                <img src="img/section2_con2_1.png" alt=""> 
+                            </a>
+
+                            <p>글로우 플레이 라이트풀 C3 톤-업 프라이머 SPF50+</p>
+                            <h3>63,000원</h3>
+                        </div>
+
+                        <div class="con2">
+                            <a href="#">
+                                <img src="img/section2_con2_2.png" alt=""> 
+                            </a>
+
+                            <p>글로우 플레이 텐더토크 립 밤</p>
+                            <h3>38,000원</h3>
+                        </div>
+
+                        <div class="con2">
+                            <a href="#">
+                                <img src="img/section2_con2_3.png" alt=""> 
+                            </a>
+
+                            <p>립글라스 에어 논-스틱 글로스</p>
+                            <h3>38,000원</h3>
+                        </div>
+
+                        <div class="con2">
+                            <a href="#">
+                                <img src="img/section2_con2_4.png" alt=""> 
+                            </a>
+
+                            <p>스트롭 리퀴드 블러쉬</p>
+                            <h3>43,000원</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- section2 pc end -->
+            
+            <!-- section2 mo -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper my_swiper_1">
+                <h2>NEW ARRIVERS</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="con2">
+                        <a href="#">
+                        
+                        <div class="img_box">  
+                            <img src="img/section2_con2_1.png" alt=""> 
+                        </div>
+
+                        <div class="text_box">
+                            <p>글로우 플레이 라이트풀 C3 톤-업 프라이머 SPF50+</p>
+                            <h3>63,000원</h3>
+                        </div>
+                        </a>
+                    </div>
+                </div> 
+
+                <div class="swiper-slide">
+                    <div class="con2">
+                    <a href="#">
+                        <div class="img_box">  
+                        <img src="img/section2_con2_2.png" alt=""> 
+                        </div>
+                        <div class="text_box">
+                        <p>글로우 플레이 텐더토크 립 밤</p>
+                        <h3>38,000원</h3>
+                        </div>
+                    </a>
+                    </div>
+                </div>  
+
+                <div class="swiper-slide">
+                    <div class="con2">
+                    <a href="#">
+                        <div class="img_box">  
+                        <img src="img/section2_con2_3.png" alt=""> 
+                        </div>
+                        <div class="text_box">
+                        <p>립글라스 에어 논-스틱 글로스</p>
+                        <h3>38,000원</h3>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="con2">
+                    <a href="#">
+                        <div class="img_box">  
+                        <img src="img/section2_con2_4.png" alt=""> 
+                        </div>
+                        <div class="text_box">
+                        <p>스트롭 리퀴드 블러쉬</p>
+                        <h3>43,000원</h3>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".my_swiper_1", {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+        
+                768: {
+                slidesPerView: 2.5,  //브라우저가 768보다 클 때
+                spaceBetween: 20,
+                },
+      },
+                });
+            </script>
+         </section>
+
+         <!-- section3 -->
+         <section class="section3">
+           <div class="con_wrap">
+                <h2>FOLLOW US @MACCOSMETICS</h2>
+
+                <ul class="img_wrap" id="sliderTrack">
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_1.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_2.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_3.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_4.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_5.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_6.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_7.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_8.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_1.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_2.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_3.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_4.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_5.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_6.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_7.png" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img src="img/section3_8.png" alt="">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+         </section>
+
+         <!-- section4 -->
+    <section class="section4">
+            <h2>BEST PRODUCT</h2>
+            <div class="swiper mySwiper btn_wrap">
+                <div class="swiper-wrapper">
+                  
+                  <div class="swiper-slide btn black">
+                    <a href="">
+                        <p>LIP</p>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide btn">
+                    <a href="">
+                        <p>FACE</p>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide btn">
+                    <a href="">
+                        <p>EYES</p>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide btn">
+                    <a href="">
+                        <p>BRUSH</p>
+                    </a>
+                  </div>
+        
+                  <div class="swiper-slide btn">
+                    <a href="">
+                        <p>SKIN CARE</p>
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+
+            
+              <!-- Initialize Swiper -->
+              <script>
+                  var swiper = new Swiper(".btn_wrap", {
+                  slidesPerView: 2.5,
+                  spaceBetween: 10,
+                  pagination: {
+                      el: ".swiper-pagination",
+                      clickable: true,
+                  },
+                  breakpoints: {
+                    
+                    395: {
+                    slidesPerView: 2.5,  //브라우저가 768보다 클 때
+                    spaceBetween: 10,
+                    },
+
+                    510: {
+                    slidesPerView: 3.2,  //브라우저가 768보다 클 때
+                    spaceBetween: 10,
+                    },
+
+                    580: {
+                    slidesPerView: 3.8,  //브라우저가 768보다 클 때
+                    spaceBetween: 10,
+                    },
+                     768: {
+                     slidesPerView: 4.9,  //브라우저가 768보다 클 때
+                     spaceBetween: 10,
+                     },
+                     1200: {
+                     slidesPerView: 5,  //브라우저가 768보다 클 때
+                     spaceBetween: 20,
+                     },
+                 },
+                  });
+              </script>
+        <div class="swiper mySwiper my_swiper_2">
+            <div class="swiper-wrapper">
+               
+                <div class="swiper-slide">
+                    <div class="con2">
+                        <a href="#">
+                        
+                        <div class="img_box">  
+                            <img src="img/section4_1.png" alt=""> 
+                        </div>
+    
+                        <div class="text_box">
+                            <p>맥시멀 실키 매트 립스틱</p>
+                            <h3>39,000원</h3>
+                        </div>
+                        </a>
+                    </div>
+                </div> 
+    
+                <div class="swiper-slide">
+                    <div class="con2">
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/section4_2.png" alt=""> 
+                            </div>
+                            <div class="text_box">
+                                <p>파우더 키스 리퀴드 립컬러</p>
+                                <h3>49,000원</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>  
+    
+                <div class="swiper-slide">
+                    <div class="con2">
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/section4_3.png" alt=""> 
+                            </div>
+                            <div class="text_box">
+                                <p>글로우 플레이 텐더토크 립 밤</p>
+                                <h3>38,000원</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="con2">
+                        <a href="#">
+                            <div class="img_box">  
+                                <img src="img/section4_4.png" alt=""> 
+                            </div>
+                            <div class="text_box">
+                                <p>스쿼트 플럼핑 글로스 스틱</p>
+                                <h3>39,000원</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+            
+             <div class="more_btn">
+                <a href="">
+                    <p>MORE VIEW</p>
+                </a>
+        </div>
+    
+         <!-- Initialize Swiper -->
+         <script>
+             var swiper = new Swiper(".my_swiper_2", {
+             slidesPerView: 1.5,
+             spaceBetween: 20,
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+             breakpoints: {
+             
+                768: {
+                slidesPerView: 2.5,  //브라우저가 768보다 클 때
+                spaceBetween: 20,
+                },
+        
+                1200: {
+                slidesPerView: 4,  //브라우저가 1120보다 클 때
+                spaceBetween: 20,
+                },
+            },
+             });
+         </script>
+    </section> 
+    
+    <!-- section5 -->
+
+    <section class="section5">
+        
+        <div class="con_wrap">
+            <h2>MAC SERVICE</h2>
+            <ul class="wrap">
+                <li>
+                    <a href="">
+                        <img src="img/section5_1.png" alt="">
+                        <div class="text">
+                            <h3>무료배송</h3>
+                            <p>구매 금액 상관없는 무료 배송으로<br>
+                                NEW 로즈톤업베이스를 배송비 없이 받아보세요.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/section5_2.png" alt="">
+                        <div class="text">
+                            <h3>메이크업 서비스 예약하기</h3>
+                            <p>가까운 매장에 방문하여<br>
+                                아티스트의 팁 & 테크를 무료로 받아보세요.</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/section5_3.png" alt="">
+                        <div class="text">
+                            <h3>버츄얼 트라이 온 서비스</h3>
+                            <p>버츄얼 트라이 온 서비스로<br>
+                                맥의 다양한 컬러를 지금 바로 체험해보세요.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="notice_wrap">
+            <h4>공지사항</h4>
+            <a href=""><p>배송 지연 공지 & 고객관리지원팀 휴무</p></a>
+            <a href="" class="pc"> <h4>MORE</h4> </a>
+        </div>
+        <div class="footer_wrap">
+            <!-- pc -->
+            <div class="menu_wrap_pc">
+                <ul class="text_wrap">
+                    <li><a href="" class="white_text">맥스토어</a></li>
+                    <li><a href="">매장안내</a></li>
+                </ul>
+
+                <ul class="text_wrap">
+                    <li><a href="" class="white_text">고객관리지원팀</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">1644 - 3748</a></li>
+                    <li><a href="">FAQS</a></li>
+                    <li><a href="">배송정보</a></li>
+                    <li><a href="">반품 및 교환</a></li>
+                </ul>
+
+                <ul class="text_wrap">
+                    <li><a href="" class="white_text">ABOUT US</a></li>
+                    <li><a href="">OUR STORY</a></li>
+                    <li><a href="">맥 에이즈 펀드</a> </li>
+                    <li><a href="">맥 프로 멤버십</a></li>
+                    <li><a href="">나의 맥 러버</a></li>
+                    <li><a href="">채용 정보</a></li>  
+                    <li><a href="">ANIMAL TESTING</a></li>      
+                </ul>
+
+                <ul class="text_wrap">
+                    <li><a href="" class="white_text">내 정보 및 주문관리</a></li>
+                    <li><a href="">내 정보 확인 및 수정</a></li>
+                    <li><a href="">주문 조회</a> </li>
+                    <li><a href="">주문 내역 조회</a></li>
+                    <li><a href="">위시리스트</a></li> 
+                </ul>
+
+                <ul class="text_wrap">
+                    <li><a href="" class="white_text">언어선택</a></li>
+                    <li><a href="">언어변경</a></li>
+                </ul>
+
+            </div>
+            <!-- mobile -->
+             <div class="menu_wrap_mo">
+                <ul>
+                    <li>
+                        <a href="">맥스토어</a>
+                    </li>
+
+                    <li>
+                        <a href="">고객관리지원팀</a>
+                    </li>
+
+                    <li>
+                        <a href="">ABOUT US</a>
+                    </li>
+
+                    <li>
+                        <a href="">내 정보 및 주문관리</a>
+                    </li>
+
+                    <li>
+                        <a href="">언어선택</a>
+                    </li>
+                </ul>
+
+             </div>
+            <ul class="sns_icon">
+                <li>
+                    <a href="">
+                        <img src="img/footer_1.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/footer_2.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/footer_3.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/footer_4.png" alt="">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <img src="img/footer_5.png" alt="">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="wrapper">
+                <ul>
+                    <li>
+                        <a href="">이용약관</a>
+                    </li>
+    
+                    <li>
+                        <a href="">개인정보처리방침</a>
+                    </li>
+    
+                    <li>
+                        <a href="">COOKIE관리</a>
+                    </li>
+                </ul>
+    
+                <ul>
+                    <li>이엘씨에이한국(유) 대표 : TENG, HSIAO_HUA</li>
+                    <li>본사 : 서울시 강남구 강남대로 382(역삼동) 메리츠타워, 06232</li>
+                </ul>
+    
+                <ul>
+                    <li>사업자등록번호 : 211-81-71889</li>
+                    <li>통신판매업신고번호 : 강남-15737호</li>
+                </ul>
+    
+                <ul>
+                    <li>사업자정보조회</li>
+                    <li>고객관리지원팀 : 1644-3748</li>
+                </ul>
+    
+                <ul>
+                    <li>호스팅서비스 사업자 : (주)엘지유플러스</li>
+                </ul>
+    
+                <ul class>
+                    <li>@MAKE-UP ART COSMETICS. ALL WORLDWIDE RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+        </div>
+        
+       
+ 
+    </footer>
+</body>
+</html>
+
